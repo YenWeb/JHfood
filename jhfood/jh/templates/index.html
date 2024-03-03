@@ -6,7 +6,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Delicious Bootstrap Template - Index</title>
+  <title>J & H - Index</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -29,9 +29,9 @@
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
   <!-- =======================================================
-  * Template Name: Delicious
+  * Template Name: J % H
   * Updated: Jan 29 2024 with Bootstrap v5.3.2
-  * Template URL: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/
+  * Template URL: https://bootstrapmade.com/J % H-free-restaurant-bootstrap-theme/
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
@@ -42,8 +42,8 @@
   <!-- ======= Top Bar ======= -->
   <section id="topbar" class="d-flex align-items-center fixed-top topbar-transparent">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-center justify-content-lg-start">
-      <i class="bi bi-phone d-flex align-items-center"><span>+1 5589 55488 55</span></i>
-      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sat: 11:00 AM - 23:00 PM</span></i>
+      <i class="bi bi-phone d-flex align-items-center"><span>+1 (873) 255 9003</span></i>
+      <i class="bi bi-clock ms-4 d-none d-lg-flex align-items-center"><span>Mon-Sun: 00:00 AM - 00:00 PM</span></i>
     </div>
   </section>
 
@@ -52,7 +52,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
-        <h1><a href="{% static 'index.html' %}">Delicious</a></h1>
+        <h1><a href="{% static 'index.html' %}">J & H</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -103,10 +103,10 @@
         <div class="carousel-inner" role="listbox">
 
           <!-- Slide 1 -->
-          <div class="carousel-item active" style="background-image: url(static/img/slide/slide-1.jpg);">
+          <div class="carousel-item active" style="background-image: url('{% static "img/slide/slide-1.jpg" %}');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"><span>Delicious</span> Restaurant</h2>
+                <h2 class="animate__animated animate__fadeInDown"><span>J % H</span> Restaurant</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
                   <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
@@ -117,7 +117,7 @@
           </div>
 
           <!-- Slide 2 -->
-          <div class="carousel-item" style="background-image: url(static/img/slide/slide-2.jpg);">
+          <div class="carousel-item" style="background-image: url('{% static "img/slide/slide-2.jpg" %}');">
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
@@ -131,7 +131,8 @@
           </div>
 
           <!-- Slide 3 -->
-          <div class="carousel-item" style="background-image: url(static/img/slide/slide-3.jpg);">
+          <div class="carousel-item" style="background-image: url('{% static "img/slide/slide-3.jpg" %}');">
+
             <div class="carousel-container">
               <div class="carousel-content">
                 <h2 class="animate__animated animate__fadeInDown">Sequi ea ut et est quaerat</h2>
@@ -166,7 +167,7 @@
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url("static/img/about.jpg");'>
+          <div class="col-lg-5 align-items-stretch video-box" style='background-image: url('{% static "img/about.jpg" %}');>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
           </div>
 
@@ -386,7 +387,7 @@
                     <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="static/img/specials-1.jpg" alt="" class="img-fluid">
+                    <img src="{% static 'img/specials-1.jpg' %}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -398,7 +399,7 @@
                     <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
                   </div>
                   <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="static/img/specials-2.jpg" alt="" class="img-fluid">
+                    <img src="{% static 'img/specials-2.jpg' %}" alt="" class="img-fluid">
                   </div>
                 </div>
               </div>
@@ -844,7 +845,7 @@
       </div>
 
       <div class="map">
-        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" allowfullscreen></iframe>
+        <iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/dir//3147+Rue+Andante,+Trois-Rivi%C3%A8res,+QC+G8V+2M1/@46.4005655,-72.5270577,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x4cc7c80e235f769b:0x6302e3414c918c9b!2m2!1d-72.5244828!2d46.4005618!5m2!1e4!1e3?entry=ttu" frameborder="0" allowfullscreen></iframe>
       </div>
 
       <div class="container mt-5">
@@ -854,30 +855,31 @@
             <div class="col-lg-3 col-md-6 info">
               <i class="bi bi-geo-alt"></i>
               <h4>Location:</h4>
-              <p>A108 Adam Street<br>New York, NY 535022</p>
+              <p>3147 Andante<br>Trois-Rivières, QC, Canada</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="bi bi-clock"></i>
               <h4>Open Hours:</h4>
-              <p>Monday-Saturday:<br>11:00 AM - 2300 PM</p>
+              <p>7 days/7<br>24 hours / 24</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="bi bi-envelope"></i>
               <h4>Email:</h4>
-              <p>info@example.com<br>contact@example.com</p>
+              <p>hanaelletayo07@gmail.com<br>udjineyenchi@gmail.com</p>
             </div>
 
             <div class="col-lg-3 col-md-6 info mt-4 mt-lg-0">
               <i class="bi bi-phone"></i>
               <h4>Call:</h4>
-              <p>+1 5589 55488 51<br>+1 5589 22475 14</p>
+              <p>+1 (873) 255 9003<br>+1 (873) 255 9255</p>
             </div>
           </div>
         </div>
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+        <form action="{% url 'contact' %}" method="post" role="form" class="php-email-form">
+          {% csrf_token %}
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -885,9 +887,6 @@
             <div class="col-md-6 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
             </div>
-          </div>
-          <div class="form-group mt-3">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
           </div>
           <div class="form-group mt-3">
             <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
@@ -908,7 +907,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>Delicious</h3>
+      <h3>J % H</h3>
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
@@ -918,14 +917,14 @@
         <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
       </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Delicious</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span>J % H</span></strong>. All Rights Reserved
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
         <!-- You can delete the links only if you purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/delicious-free-restaurant-bootstrap-theme/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/J % H-free-restaurant-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">YenWeb</a>
       </div>
     </div>
   </footer><!-- End Footer -->

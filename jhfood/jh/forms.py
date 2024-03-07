@@ -1,7 +1,12 @@
 # forms.py
 from django import forms
+from .models import Utilisateur
+from django.forms import ModelForm
+from . import models
+# listings/forms.py
 
-class ContactForm(forms.Form):
-    nom = forms.CharField(max_length=100)
-    email = forms.EmailField()
-    message = forms.CharField(widget=forms.Textarea)
+class UtilisateurForm(ModelForm):
+   class Meta:
+      model = Utilisateur
+      fields = {'nom', 'mail', 'message',}
+   

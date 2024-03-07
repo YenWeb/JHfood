@@ -21,5 +21,8 @@ from jh import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('index/', views.index),
-    path('', views.contact, name='contact'),
+    path('contact/', views.contact, name='contact'),
+    path('success/', views.success, name='success')
+
+    #path('', views.contact, name='contact'),
 ]

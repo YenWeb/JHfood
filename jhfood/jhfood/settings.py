@@ -126,3 +126,15 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+########################################################################
+# settings.py
+# merchex/settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'votre_adresse_email@gmail.com'  # Adresse Gmail à partir de laquelle vous enverrez les e-mails
+EMAIL_HOST_PASSWORD = 'votre_mot_de_passe_gmail'  # Mot de passe de votre compte Gmail

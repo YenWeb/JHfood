@@ -1,29 +1,30 @@
-from django.shortcuts import render
-from django.http import HttpResponse
+from django.shortcuts import render, redirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.core.mail import send_mail
-from .forms import ContactForm
+from .forms import UtilisateurForm
 # Create your views here.
 def index(request):
     return render(request,'index.html')
 
 
+
+  # passe ce formulaire au gabarit
+def success(request):
+    return render(request, 'success.html')
+#def success(request):
+   #return HttpResponse('Success!')
+
 def contact(request):
+    submited = False
     if request.method == 'POST':
-        form = ContactForm(request.POST)
+        form = UtilisateurForm(request.POST)
         if form.is_valid():
-            nom = form.cleaned_data['nom']
-            email = form.cleaned_data['email']
-            message = form.cleaned_data['message']
-            # Envoyer l'email
-            send_mail(
-                'Message de contact',
-                f'Nom: {nom}\nEmail: {email}\n\n{message}',
-                'votre@email.com',
-                ['udjineyenchi@gmail.com'],
-                fail_silently=False,
-            )
-            # Redirection ou affichage d'un message de succès
+            form.save()
+            return HttpResponseRedirect("/")
+            # Envoyer l'e-mail
     else:
-        form = ContactForm()
-    return render(request, 'contact.html', {'form': form})
-    
+            form = UtilisateurForm
+            if 'submitted' in request.GET:
+                 submited = True
+    return render(request, "index.html", {'form ': form})
+            

@@ -52,7 +52,7 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
       <div class="logo me-auto">
-        <h1><a href="{% static 'index.html' %}">J & H</a></h1>
+        <h1><a href="{% static 'index.html' %}">J & H  food</a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="static/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
@@ -88,7 +88,7 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="#book-a-table" class="book-a-table-btn scrollto">Book a table</a>
+      <a href="#book-a-table" class="book-a-table-btn scrollto">Book a menu </a>
 
     </div>
   </header><!-- End Header -->
@@ -106,7 +106,7 @@
           <div class="carousel-item active" style="background-image: url('{% static "img/slide/slide-1.jpg" %}');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown"><span>J % H</span> Restaurant</h2>
+                <h2 class="animate__animated animate__fadeInDown"><span>J % H food</span> Restaurant</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
                   <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
@@ -120,7 +120,7 @@
           <div class="carousel-item" style="background-image: url('{% static "img/slide/slide-2.jpg" %}');">
             <div class="carousel-container">
               <div class="carousel-content">
-                <h2 class="animate__animated animate__fadeInDown">Lorem Ipsum Dolor</h2>
+                <h2 class="animate__animated animate__fadeInDown">Ici on croc</h2>
                 <p class="animate__animated animate__fadeInUp">Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem mollitia ut. Similique ea voluptatem. Esse doloremque accusamus repellendus deleniti vel. Minus et tempore modi architecto.</p>
                 <div>
                   <a href="#menu" class="btn-menu animate__animated animate__fadeInUp scrollto">Our Menu</a>
@@ -878,8 +878,9 @@
           </div>
         </div>
 
-        <form action="{% url 'contact' %}" method="post" role="form" class="php-email-form">
+        <form method="POST" role="form" class="php-email-form">
           {% csrf_token %}
+          ­{{form.as_p}}
           <div class="row">
             <div class="col-md-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
@@ -907,7 +908,7 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-      <h3>J % H</h3>
+      <h3>J & H</h3>
       <p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
       <div class="social-links">
         <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
